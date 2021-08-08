@@ -5,7 +5,7 @@ from models.option import Option
 from models.poll import Poll
 from connections import create_connection
 
-
+ 
 DATABASE_PROMPT = "Enter the DATABASE_URI value or leave empty to load from .env file: "
 MENU_PROMPT = """-- Menu --
 
