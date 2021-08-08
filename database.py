@@ -88,7 +88,7 @@ def add_option(connection, option_text: str, poll_id: int):
     with connection:
         with connection.cursor() as cursor:
             cursor.execute(INSERT_OPTION_RETURN_ID, (option_text,poll_id))
-            option_id = cursor.fetchone[0]
+            option_id = cursor.fetchone()[0]
             return option_id
 
 # -- votes --
